@@ -1,0 +1,29 @@
+# GET all bikes
+GET http://localhost:3001/bikes HTTP/1.1
+Content-Type:   application/json
+
+###
+
+#Create a bike
+POST http://localhost:3001/bikes HTTP/1.1
+Content-Type:   application/json
+
+{
+  "name" : "Tom",
+  "country":"China"
+}
+
+###
+#Update a bike
+Put http://localhost:3001/bikes/3 HTTP/1.1
+Content-Type:   application/json
+
+{
+  "name" : "Jerry",
+  "country":"America"
+}
+
+###
+#delete a bike
+Delete http://localhost:3001/bikes/3 HTTP/1.1
+Content-Type:   application/json

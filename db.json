@@ -1,0 +1,34 @@
+{
+  "bikes": [
+    {
+      "name": "Trek",
+      "country": "US",
+      "id": 1
+    },
+    {
+      "name": "Giant",
+      "country": "Taiwan",
+      "id": 2
+    },
+    {
+      "name": "Bianchi",
+      "country": "Italy",
+      "id": 3
+    },
+    {
+      "name": "Specialized",
+      "country": "US",
+      "id": 4
+    },
+    {
+      "name": "Canyon",
+      "country": "Germany",
+      "id": 5
+    },
+    {
+      "name": "Scott",
+      "country": "Switzerland",
+      "id": 6
+    }
+  ]
+}

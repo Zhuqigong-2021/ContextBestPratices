@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import BikeCreate from "./components/BikeCreate";
+import { useEffect } from "react";
+import BikeLists from "./components/BikeLists";
+import useBikeContext from "./helper/useBikeContext";
+// import BikesContext from "./context/Provider";
 
 function App() {
+  const { fetchBikes } = useBikeContext();
+  // const { fetchBikes } = useContext(BikesContext);
+  useEffect(() => {
+    fetchBikes();
+  }, [fetchBikes]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BikeCreate />
+      <BikeLists />
     </div>
   );
 }

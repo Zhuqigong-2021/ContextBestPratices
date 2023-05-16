@@ -1,38 +1,49 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.add {
+  height: 50px;
+  background-color: #61dafb;
+  padding: 2rem 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.card {
+  display: flex;
+  border-radius: 5px;
+  flex-direction: column;
+  position: relative;
+  width: 150px;
+  height: 180px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  margin: 2rem;
+  padding: 1.5rem 1rem;
+}
+.update {
+  color: green;
+}
+.delete {
+  color: red;
+  margin-left: 0.5rem;
+}
+.edit {
+  position: absolute;
+  display: flex;
+  top: 2px;
+  right: 5px;
+}
+.content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.bikes {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bikeEdit {
+  z-index: 1;
+  background-color: white;
+  padding: 0.5rem 0.2rem;
 }
